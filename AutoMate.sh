@@ -1,8 +1,8 @@
 #!/bin/bash
 VM_VERSION=`cat /etc/redhat-release | awk '{print$(NF-1)}' 2> /dev/null`
-EXEC_PATH="/tmp/AutoRHL"
+EXEC_PATH="/tmp/AutoMate"
 EXEC_MODE="auto"
-LOG_FILE="$EXEC_PATH/AutoRHL.log"
+LOG_FILE="$EXEC_PATH/AutoMate.log"
 CONFIG_PATH="$EXEC_PATH/etc"
 DOWNLOAD_PATH="$EXEC_PATH/downloads"
 LOG_TEXT=""
