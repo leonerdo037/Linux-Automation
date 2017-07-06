@@ -1,8 +1,9 @@
 #!/bin/bash
+#Code optimized and tested on RHEL. Minor tweaks are necessary to port it for other flavours of UNIX.
 VM_VERSION=`cat /etc/redhat-release | awk '{print$(NF-1)}' 2> /dev/null`
-EXEC_PATH="/tmp/AutoMate"
+EXEC_PATH="/tmp/AutoRHL"
 EXEC_MODE="auto"
-LOG_FILE="$EXEC_PATH/AutoMate.log"
+LOG_FILE="$EXEC_PATH/AutoRHL.log"
 CONFIG_PATH="$EXEC_PATH/etc"
 DOWNLOAD_PATH="$EXEC_PATH/downloads"
 LOG_TEXT=""
